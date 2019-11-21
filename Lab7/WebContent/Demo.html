@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> FileUpload Demo </title>
+</head>
+<script type = "text/javascript">
+function validate()
+{
+	if(document.form1.f1.value == "")
+	{
+		alert("First Browse the File")
+	}
+	else
+	{
+		document.form1.submit();
+	}
+}
+</script>
+<body>
+	<form action = "Program10" name = "form1" method = "get">
+		<p>
+			<center>
+				<h1> File Download Program <h1>
+				<input type = "file"  name="f1">  </br>
+				<input type = "submit" value = "Click to Start Downloading" onclick = "validate()">
+				
+			</center>
+		</p>
+	</form>
+</body>
+</html>
