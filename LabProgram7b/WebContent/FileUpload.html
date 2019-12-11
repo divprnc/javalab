@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type = "text/javascript">
+		function validate()
+		{
+			if(document.form1.sfile.value == "")
+				{
+					alert("Select the file first");
+				}
+			else
+				{
+					document.form1.submit();
+				}
+		}
+	
+	</script>
+
+<body>
+	<form action = "ShowData" method = "get" name = "form1">
+	<center>
+			
+		<h2>Select File From Here</h2>
+		<input type = "file" name = "f1"></br>
+		<input type = "submit" value = "Download to See" onclick = "validate()">
+	</center>
+	
+	
+	</form>
+</body>
+</html>
